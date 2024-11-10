@@ -1,0 +1,130 @@
+/* Background untuk halaman login */
+.bg-login {
+    position: relative;
+    background: rgba(58, 123, 213, 0.5); /* Biru transparan 50% */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Gaya gambar latar belakang */
+.bg-login img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3; /* Atur tingkat transparansi gambar */
+    z-index: -1; /* Tempatkan di belakang konten */
+}
+
+/* Kotak login */
+.kotak-login {
+    background: rgba(255, 255, 255, 0.9); /* Efek transparan putih */
+    border-radius: 10px;
+    padding: 40px 30px;
+    width: 400px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px); /* Efek blur transparan */
+    color: #333;
+    z-index: 1; /* Pastikan berada di atas gambar */
+}
+
+/* Gaya judul login */
+.tulisan-login {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Tabel input form */
+.kotak-login table {
+    width: 100%;
+}
+
+.kotak-login td {
+    color: #333;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+/* Input teks */
+.kotak-login input[type="text"],
+.kotak-login input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    font-size: 16px;
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.kotak-login input[type="text"]:focus,
+.kotak-login input[type="password"]:focus {
+    box-shadow: inset 0px 2px 8px rgba(0, 0, 0, 0.3);
+    outline: none;
+}
+
+/* Tombol login */
+.tombol-login {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #3a7bd5, #00d2ff);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.tombol-login:hover {
+    background: linear-gradient(135deg, #00d2ff, #3a7bd5);
+    transform: translateY(-2px);
+}
+
+.tombol-login:active {
+    transform: translateY(0px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.tombol-kembali {
+    display: inline-block;
+    text-align: center;
+    width: 370px;
+    padding: 15px;
+    background: linear-gradient(135deg, #d9534f, #c9302c); /* Gradien merah */
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    text-decoration: none; /* Hapus garis bawah link */
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.tombol-kembali:hover {
+    background: linear-gradient(135deg, #c9302c, #d9534f); /* Ganti arah gradien saat hover */
+    transform: translateY(-2px);
+}
+
+.tombol-kembali:active {
+    transform: translateY(0px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+

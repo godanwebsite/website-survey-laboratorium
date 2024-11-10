@@ -1,0 +1,307 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+/* Tambahkan margin pada body atau container utama */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    margin-top: 80px; /* Sesuaikan dengan tinggi header */
+}
+
+/* Header */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #007acc;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000; /* Pastikan header tetap di atas konten */
+}
+
+/* Hilangkan deklarasi .header, yang mirip dengan header di atas */
+.header {
+    display: none;
+}
+
+
+/* Header */
+/* Header */
+header {
+    position: fixed;
+    width: 98%;
+    top: 0;
+    background-color: #007acc;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.header-links {
+    display: flex;
+    gap: 15px;
+}
+
+.button-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #005fa3;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+}
+
+.button-link:hover {
+    background-color: #003f73;
+}
+.header {
+    background-color: #007acc;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.header a.login-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    float: right;
+    margin-top: -25px;
+}
+
+.header a.login-link:hover {
+    text-decoration: underline;
+}
+
+/* Container for forms and tables */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    color: #007acc;
+    margin-bottom: 20px;
+}
+
+ul li{
+    list-style: none;
+}
+
+/* Question Block */
+.question-block {
+    margin-bottom: 15px;
+}
+
+.question-block label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Form Elements */
+select, input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Table Styling */
+.survey-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.survey-table th, .survey-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.survey-table th {
+    background-color: #007acc;
+    color: white;
+}
+
+/* Section Styles */
+.centered-warning {
+    color: #d9534f; /* Red color */
+    font-size: 48px; /* Super large text */
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+    list-style: none;
+}
+
+.attention-warning {
+    color: #d9534f; /* Red color */
+    font-weight: bold;
+}
+
+.warning, .feedback-list, .add-question, .category-probability {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #ffebcc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 165, 0, 0.2);
+}
+
+.add-question button{
+    width: 370px;
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #007acc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 165, 0, 0.2);
+}
+
+.add-question {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Menempatkan tombol di tengah secara horizontal */
+    justify-content: center; /* Menempatkan tombol di tengah secara vertikal */
+    height: 100vh; /* Memastikan container memenuhi tinggi layar */
+    padding: 30px;
+    background-color: #ffebcc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.add-question button {
+    width: 370px;
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #007acc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 165, 0, 0.2);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-question button:hover {
+    background-color: #005fa3;
+}
+
+.add-question button:active {
+    transform: translateY(1px);
+}
+
+
+.feedback-list {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.feedback-list h2 {
+    color: #007acc;
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Style for each feedback item */
+.feedback-list ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0;
+    margin: 0;
+}
+
+.feedback-list li {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.feedback-list li:last-child {
+    border-bottom: none; /* Remove border from last item */
+}
+
+.feedback-list strong {
+    font-size: 18px;
+    color: #333;
+}
+
+.feedback-list p {
+    margin: 5px 0 10px; /* Space around suggestion text */
+    color: #555;
+    font-size: 16px;
+}
+
+.feedback-list small {
+    font-size: 12px;
+    color: #888;
+    display: block;
+    margin-top: 5px;
+}
+
+
+.warning h2, .feedback-list h2, .add-question h2, .category-probability h2 {
+    color: #e67e22;
+    font-size: 20px;
+}
+
+/* Button Styling */
+.submit-button, button {
+    background-color: #007acc;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.submit-button:hover, button:hover {
+    background-color: #005fa3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+}
